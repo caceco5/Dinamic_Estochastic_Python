@@ -5,6 +5,7 @@ def fibonacci_recursivo(n):
     
     return fibonacci_recursivo(n-1) + fibonacci_recursivo(n-2)
 
+
 if __name__ == '__main__':
     n = int(input('Escoge un numero: '))
     resultado = fibonacci_recursivo(n)
