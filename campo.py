@@ -1,9 +1,9 @@
 
 class Campo:
     def __init__(self): #contructor
-        self.coordenadas_de_borrachos = {} #crea un diccionario de las coordenadas de los borrachos.
+        self.coordenadas_de_borrachos = {} #crea un diccionario de las coordenadas de los borrachos que esta vacio.
     
-    def anadir_borracho(self, borracho, coordenada): #que borracho queremos recibir y donde estara
+    def anadir_borracho(self, borracho, coordenada): #que borracho queremos añair y donde estara
         self.coordenadas_de_borrachos[borracho] = coordenada #se guarda dentro del diccionario, y se designa esta operacion a coordenada
 
 

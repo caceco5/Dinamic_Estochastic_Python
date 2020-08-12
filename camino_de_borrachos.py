@@ -12,4 +12,10 @@ class BorrachoTradicional(Borracho):  # clase base, genera un contructor con ini
         super().__init__(nombre)
 
     def camina(self): # camina aleatoriamente entre 4 opciones
-        return random.choice([(0,1), (0,-1), (1,0), (-1,0)]) #choice permite generar varias opciones que tienen la misma probabilidad
+        return random.choice([
+            (random.random(), random.random() * -1),
+                (random.random() * -1, random.random()),
+                (random.random() * -1, random.random() * -1),
+                (random.random(), random.random()),
+            ])
+        #choice permite generar varias opciones que tienen la misma probabilidad
